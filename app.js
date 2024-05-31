@@ -11,7 +11,7 @@ const app = express()
 
 app.use(express.json())
 
-let database = null
+let db = null
 
 const initializeDbAndServer = async () => {
   try {
