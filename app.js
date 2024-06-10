@@ -66,8 +66,8 @@ app.post('/login/', async (req, res) => {
         const payload = {
           username: username,
         }
-        const token = jwttoken.sign(payload, 'secretkey')
-        res.send({token})
+        const token = jwttoken.sign(payload, "secretkey");
+        res.send({ jwtToken: token });
       }
     }
   } catch (e) {
